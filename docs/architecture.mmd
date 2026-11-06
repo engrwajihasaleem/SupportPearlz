@@ -1,0 +1,17 @@
+flowchart TD
+  subgraph ING[Offline ingestion]
+    A[Knowledge base: MD / CSV / PDF / DOCX / TXT] --> B[LangChain loaders + metadata]
+    B --> C[Deduplicate + recursive chunking]
+    C --> D[OpenAI Embeddings]
+    D --> E[(Persistent Chroma index)]
+  end
+  subgraph Q[Online query]
+    U[Streamlit user] --> H[Session history]
+    H --> R[Query condensation]
+    R --> V[Chroma similarity retriever + relevance gate]
+    E --> V
+    V --> P[Grounded LangChain prompt]
+    P --> L[ChatOpenAI structured output]
+    L --> S[Pydantic validation + citation validation]
+    S --> O[Answer / partial answer / refusal]
+  end

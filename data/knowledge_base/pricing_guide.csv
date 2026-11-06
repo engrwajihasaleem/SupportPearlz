@@ -1,0 +1,10 @@
+SKU,product_name,description,list_price_pkr,promo_price_pkr,availability
+AP300,AquaPearl 300,Compact home water purifier,42000,39900,Available
+AP500P,AquaPearl 500 Pro,Advanced household water purifier,68000,64900,Available
+APM,AeroPearl Mini,Compact air purifier,35500,33900,Available
+F-SD500,Sediment pre-filter AP500,Replacement sediment cartridge,2800,2600,Available
+F-CB500,Carbon filter AP500,Replacement carbon cartridge,4900,4650,Available
+F-MB500,Membrane AP500,Replacement membrane cartridge,8900,8500,Available
+F-AP300,Filter set AP300,Three-stage replacement set,7200,6900,Available
+BUNDLE-500,AP500 Pro + annual filter set,Promotional purifier and filter bundle,76000,71900,Available
+AP200,AquaPearl 200,Discontinued legacy purifier,39000,,Discontinued

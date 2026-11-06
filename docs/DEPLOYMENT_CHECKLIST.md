@@ -1,0 +1,16 @@
+# Deployment and submission checklist
+- [ ] Install Python 3.12 and create a virtual environment.
+- [ ] Install pinned requirements.
+- [ ] Provision first administrator with environment variables.
+- [ ] Validate OpenAI key in the app; do not store it in files.
+- [ ] Build Chroma index from Admin Console.
+- [ ] Test factual answer with citations.
+- [ ] Test an unanswerable question and confirm refusal.
+- [ ] Test a follow-up and inspect rewritten query in UI/logs.
+- [ ] Run pytest and evaluation harness; inspect failures.
+- [ ] Capture six genuine screenshots.
+- [ ] Replace report placeholders with measured results.
+- [ ] Build and run Docker image locally.
+- [ ] Push image to Docker Hub.
+- [ ] Create GitHub repo and push source after checking git status.
+- [ ] Record 5–8-minute demo and prepare to explain each module.

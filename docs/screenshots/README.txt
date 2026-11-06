@@ -1,0 +1,1 @@
+Capture six real screenshots after running locally. Do not submit invented screenshots.

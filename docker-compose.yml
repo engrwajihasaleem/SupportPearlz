@@ -1,0 +1,17 @@
+services:
+  supportpearlz:
+    build: .
+    image: supportpearlz:1.0
+    ports: ["8501:8501"]
+    environment:
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-admin@pearlzhome.example}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set ADMIN_PASSWORD before docker compose up}
+      LLM_MODEL: ${LLM_MODEL:-gpt-4o-mini}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-text-embedding-3-small}
+    volumes:
+      - pearlz_data:/app/data
+      - pearlz_logs:/app/logs
+    restart: unless-stopped
+volumes:
+  pearlz_data:
+  pearlz_logs:
